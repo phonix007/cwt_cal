@@ -30,7 +30,7 @@ body{
 	background: url('../images/Sprite.png') no-repeat -22px -8px;
 	width: 54px;
 	height: 25px;
-	padding:1px;
+	padding:0px;
     cursor: pointer;
     font-size: 12px;
     font-weight: bold;
@@ -39,7 +39,8 @@ body{
     right: 79px;
     text-align: center;
     top: 7px;
-/*	border:1px solid;
+
+	border:1px solid;
 	border-radius:5px;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
@@ -47,7 +48,7 @@ body{
 	box-shadow:0 2px 2px #000000;
 	-webkit-box-shadow:0 2px 2px #000000;
 	-moz-box-shadow:0 2px 2px #000000;
-	-ms-box-shadow:0 2px 2px #000000;*/
+	-ms-box-shadow:0 2px 2px #000000;
 
 }
 #keyPad_Help:hover{
@@ -60,7 +61,7 @@ body{
 	background: url('../images/Sprite.png')no-repeat -22px -43px;
 	width: 54px;
 	height: 25px;
-	padding:1px;
+	padding:0px;
     cursor: pointer;
     font-size: 12px;
     font-weight: bold;
@@ -69,6 +70,17 @@ body{
     right: 79px;
     text-align: center;
     top: 7px;
+
+    border:1px solid;
+    	border-radius:5px;
+    	-webkit-border-radius:5px;
+    	-moz-border-radius:5px;
+    	-ms-border-radius:5px;
+    	box-shadow:0 2px 2px #000000;
+    	-webkit-box-shadow:0 2px 2px #000000;
+    	-moz-box-shadow:0 2px 2px #000000;
+    	-ms-box-shadow:0 2px 2px #000000;
+
 }
 #keyPad_Helpback:hover{
    background: url('../images/Sprite.png')  no-repeat -82px -43px;
@@ -122,25 +134,26 @@ background: url('../images/Sprite.png') no-repeat -175px -13px;
     width: 74px !important;
 }
 /*.calc_close:hover{
-	background:#c0392b;
-}*/
+	background:#c0392b;*/
+}
 #mainContentArea{
 margin-top:0px;
-padding:10px;
+padding:0px; /*originally it was 10px*/
 }
 .calc_container {
     background: none repeat scroll 0 0 #dadada;
     border: 1px solid #aaa;
     border-radius: 5px;
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.1) inset;
     padding: 0px;
-    width: 463px;
-    border-bottom: 7px solid #999;
+    width: 670px; /*originally it was 463px*/
+    height: 100%; /*originally it was not there*/
+    border-bottom: 0px solid #999; /*originally it was 7px*/
     position:relative;
 }
 #keyPad_Help{
-   /* position: absolute!important;
-    right: 125px;*/
+    position: absolute; /*originally it was absolute!important*/
+    right: 125px;
 }
 .left_sec{
     float: left;
@@ -148,13 +161,13 @@ padding:10px;
 }
 .right_sec{
     float: left;
-    height:180px;
+    height:100%; /*originally it was 180px*/
 }
 /* KEY ROW */
 .calc_row{
     display: block;
     overflow: hidden;
-    margin-bottom: 5px;
+    margin-bottom: 0px; /*originally it was 5px*/
 }
 
 
@@ -170,18 +183,18 @@ padding:10px;
     cursor: pointer;
     /*  display: block; */
     float: left;
-    font-size: 12px;
+    font-size: 16px; /*originally it was 12px*/
     font-weight: bold;
-    height: 25px;
+    height: 35px; /*originally it was 25px due to this change height of all button changed*/
     line-height: 20px;
-    margin-right: 5px;
+    margin-right: 0px; /*originally it was 5px*/
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
-    width: 35px;
+    width: 60px; /*originally it was 35px*/
 }
 #keyPad a.min {
-    font-size: 10.5px;
+    font-size: 16px; /*originally it was 10.5px*/
 }
 #keyPad a.last {
     margin-right: 0px;
@@ -190,12 +203,12 @@ padding:10px;
 
 #keyPad a:active {
     position: relative;
-    height: 25px;
+    height: 40px; /*originally it was 25px effect not seen*/
     border-bottom: 1px solid #aaa;
 }
 #keyPad_btnEnter:active  {
 	position:absolute !important;
-	bottom:17px !important;
+	bottom:1px !important; /*originally it was 17px effect not seen*/
 }
 #keyPad a:hover  {
     background: #eaeaea;
@@ -208,7 +221,7 @@ padding:10px;
   visibility: hidden;
   position: absolute;
   top: 52px;
-  right:429px;
+  left:20px; /*originally it was right:12px when MC is tapped it is shifted to left side*/
   bottom: 0;
   opacity: 0;
   transition: opacity 1s, visibility, 1s;
@@ -216,6 +229,9 @@ padding:10px;
 .memoryshow {
   visibility: visible;
   opacity: 1;
+  position: absolute;
+  top: 52px;
+  left: 20px;
 }
 
 /* INPUT/MEM TEXT BOXES*/
@@ -227,32 +243,32 @@ padding:10px;
     border-style: solid;
     border-width: 1px 1px 3px;
     font-size: 20px;
-    height: 30px;
+    height: 35px; /*originally it was 30px*/
     line-height: 30px;
     text-align: right;
     text-indent: 10px;
     vertical-align: middle;
-    width: 434px;
+    width: 670px; /*originally it was 434px text bars fited to screen*/
     float: left;
-    margin-bottom: 7px;
-    padding-right:5px;
+    margin-bottom: 0px; /*originally it was 7px margin between text bars reduced to zero*/
+    padding-right:0px;
 }
 
 .degree_radian{
     float: left;
     height: 25px;
-    width: 80px;
+    width: 18%; /*originally it was 80px*/
     display: inline-block;
-    font-size:9px;
-    margin-top: 4px;
+    font-size:16px; /*originally it was 9px*/
+    margin-top: 2px; /*originally it was 4px*/
     vertical-align: middle;
 }
 
 #keyPad_btnDot{
-	width:35px!important;
+	width:9.3%!important; /*originally it was 35px*/
 }
 #keyPad_btn0{
-	width:76px!important;
+	width:18.2%!important; /*originally it was 76px*/
 }
 /* ARROWS */
 .calc_arrows{
@@ -270,9 +286,11 @@ padding:10px;
 	line-height: 47px;
 	right:10px;
         *right:-6px;
-    width: 35px;
-    height: 53px;
+    width: 67px; /*originally it was 35px*/
+    height: 70px; /*originally it was 53px*/
 	position:absolute;
+	bottom: 0px;
+	left: 90.5%;
     /* LINE-HEIGHT: 65PX; */
     FONT-SIZE: 20px;
 }
@@ -290,7 +308,7 @@ padding:10px;
     background: none repeat scroll 0 0 #e74c3c;
     color: #fff;
     border-color: #c0392b;
-	width:35px!important;
+	width:9%!important; /*originally it was 35px*/
 
 }
 #keyPad #keyPad_btnBack
@@ -298,14 +316,14 @@ padding:10px;
 background: none repeat scroll 0 0 #e74c3c;
     color: #fff;
     border-color: #c0392b;
-	width:76px!important;
+	width:18.3%!important; /*originally it was 76px*/
 }
 /* SPECIAL FORMATTING FOR SUPER-SCRIPT KEYS */
 #keyPad #keyPad_btnSquare,
 #keyPad #keyPad_btnCube,
 #keyPad #keyPad_btnExp,
 #keyPad #keyPad_btnYpowX{
-    font-size: 12px;
+    font-size: 18px; /*originally it was 12px*/
 }
 
 /* CLEAR BOTH */
@@ -326,7 +344,7 @@ background: none repeat scroll 0 0 #e74c3c;
     height: 263px;
     margin-right: 6px;
     overflow: auto;
-    padding: 10px;
+    padding: 0px;
 }
 #helptopDiv
 {
