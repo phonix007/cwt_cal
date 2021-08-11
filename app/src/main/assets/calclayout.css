@@ -26,11 +26,11 @@ body{
 	-ms-border-radius:5px;
 }
 #keyPad_Help{
-    color: #fff;
+    color: #000;
 	background: url('../images/Sprite.png') no-repeat -22px -8px;
 	width: 54px;
 	height: 25px;
-	padding:0px;
+	padding:1px;
     cursor: pointer;
     font-size: 12px;
     font-weight: bold;
@@ -39,8 +39,7 @@ body{
     right: 79px;
     text-align: center;
     top: 7px;
-
-	border:1px solid;
+/*	border:1px solid;
 	border-radius:5px;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
@@ -48,7 +47,7 @@ body{
 	box-shadow:0 2px 2px #000000;
 	-webkit-box-shadow:0 2px 2px #000000;
 	-moz-box-shadow:0 2px 2px #000000;
-	-ms-box-shadow:0 2px 2px #000000;
+	-ms-box-shadow:0 2px 2px #000000;*/
 
 }
 #keyPad_Help:hover{
@@ -61,7 +60,7 @@ body{
 	background: url('../images/Sprite.png')no-repeat -22px -43px;
 	width: 54px;
 	height: 25px;
-	padding:0px;
+	padding:1px;
     cursor: pointer;
     font-size: 12px;
     font-weight: bold;
@@ -70,17 +69,6 @@ body{
     right: 79px;
     text-align: center;
     top: 7px;
-
-    border:1px solid;
-    	border-radius:5px;
-    	-webkit-border-radius:5px;
-    	-moz-border-radius:5px;
-    	-ms-border-radius:5px;
-    	box-shadow:0 2px 2px #000000;
-    	-webkit-box-shadow:0 2px 2px #000000;
-    	-moz-box-shadow:0 2px 2px #000000;
-    	-ms-box-shadow:0 2px 2px #000000;
-
 }
 #keyPad_Helpback:hover{
    background: url('../images/Sprite.png')  no-repeat -82px -43px;
@@ -134,19 +122,19 @@ background: url('../images/Sprite.png') no-repeat -175px -13px;
     width: 74px !important;
 }
 /*.calc_close:hover{
-	background:#c0392b;*/
-}
+	background:#c0392b;
+}*/
 #mainContentArea{
 margin-top:0px;
-padding:0px; /*originally it was 10px*/
+padding:10px;
 }
 .calc_container {
     background: none repeat scroll 0 0 #dadada;
     border: 1px solid #aaa;
     border-radius: 5px;
-    box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1) inset;
     padding: 0px;
-    width: 670px; /*originally it was 463px*/
+    width: 690px; /*originally it was 463px*/
     height: 100%; /*originally it was not there*/
     border-bottom: 0px solid #999; /*originally it was 7px*/
     position:relative;
@@ -167,7 +155,7 @@ padding:0px; /*originally it was 10px*/
 .calc_row{
     display: block;
     overflow: hidden;
-    margin-bottom: 0px; /*originally it was 5px*/
+    margin-bottom: 5px;
 }
 
 
@@ -183,7 +171,7 @@ padding:0px; /*originally it was 10px*/
     cursor: pointer;
     /*  display: block; */
     float: left;
-    font-size: 16px; /*originally it was 12px*/
+    font-size: 17px; /*originally it was 12px*/
     font-weight: bold;
     height: 35px; /*originally it was 25px due to this change height of all button changed*/
     line-height: 20px;
@@ -194,7 +182,7 @@ padding:0px; /*originally it was 10px*/
     width: 60px; /*originally it was 35px*/
 }
 #keyPad a.min {
-    font-size: 16px; /*originally it was 10.5px*/
+    font-size: 17px; /*originally it was 10.5px*/
 }
 #keyPad a.last {
     margin-right: 0px;
@@ -248,9 +236,9 @@ padding:0px; /*originally it was 10px*/
     text-align: right;
     text-indent: 10px;
     vertical-align: middle;
-    width: 670px; /*originally it was 434px text bars fited to screen*/
+    width: 662px; /*originally it was 434px text bars fited to screen*/
     float: left;
-    margin-bottom: 0px; /*originally it was 7px margin between text bars reduced to zero*/
+    margin-bottom: 7px; /*originally it was 7px margin between text bars reduced to zero*/
     padding-right:0px;
 }
 
@@ -259,7 +247,7 @@ padding:0px; /*originally it was 10px*/
     height: 25px;
     width: 18%; /*originally it was 80px*/
     display: inline-block;
-    font-size:16px; /*originally it was 9px*/
+    font-size:17px; /*originally it was 9px*/
     margin-top: 2px; /*originally it was 4px*/
     vertical-align: middle;
 }
@@ -272,7 +260,7 @@ padding:0px; /*originally it was 10px*/
 }
 /* ARROWS */
 .calc_arrows{
-    font-size: 24px!important;
+    font-size: 40px!important;
     /*line-height: 29px!important;*/
 }
 
@@ -286,13 +274,13 @@ padding:0px; /*originally it was 10px*/
 	line-height: 47px;
 	right:10px;
         *right:-6px;
-    width: 67px; /*originally it was 35px*/
-    height: 70px; /*originally it was 53px*/
+    width: 60px; /*originally it was 35px*/
+    height: 72px; /*originally it was 53px*/
 	position:absolute;
-	bottom: 0px;
-	left: 90.5%;
+	bottom: 15px;
+	left: 616px;
     /* LINE-HEIGHT: 65PX; */
-    FONT-SIZE: 20px;
+    FONT-SIZE: 25px;
 }
 
 /* ZERO a: DOUBLE WIDTH
@@ -323,7 +311,7 @@ background: none repeat scroll 0 0 #e74c3c;
 #keyPad #keyPad_btnCube,
 #keyPad #keyPad_btnExp,
 #keyPad #keyPad_btnYpowX{
-    font-size: 18px; /*originally it was 12px*/
+    font-size: 20px; /*originally it was 12px*/
 }
 
 /* CLEAR BOTH */
@@ -344,7 +332,7 @@ background: none repeat scroll 0 0 #e74c3c;
     height: 263px;
     margin-right: 6px;
     overflow: auto;
-    padding: 0px;
+    padding: 10px;
 }
 #helptopDiv
 {
