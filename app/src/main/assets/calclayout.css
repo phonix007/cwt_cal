@@ -178,6 +178,7 @@ padding:10px;
     margin-right: 0px; /*originally it was 5px*/
     text-align: center;
     text-decoration: none;
+    padding-top: 3px;
     vertical-align: middle;
     width: 60px; /*originally it was 35px*/
 }
@@ -191,12 +192,12 @@ padding:10px;
 
 #keyPad a:active {
     position: relative;
-    height: 40px; /*originally it was 25px effect not seen*/
+    height: 25px;
     border-bottom: 1px solid #aaa;
 }
 #keyPad_btnEnter:active  {
 	position:absolute !important;
-	bottom:1px !important; /*originally it was 17px effect not seen*/
+	bottom:17px !important;
 }
 #keyPad a:hover  {
     background: #eaeaea;
@@ -239,7 +240,7 @@ padding:10px;
     width: 662px; /*originally it was 434px text bars fited to screen*/
     float: left;
     margin-bottom: 7px; /*originally it was 7px margin between text bars reduced to zero*/
-    padding-right:0px;
+    padding-right:2px;
 }
 
 .degree_radian{
@@ -280,6 +281,7 @@ padding:10px;
 	bottom: 15px;
 	left: 616px;
     /* LINE-HEIGHT: 65PX; */
+    padding: 7px;
     FONT-SIZE: 25px;
 }
 
@@ -296,6 +298,7 @@ padding:10px;
     background: none repeat scroll 0 0 #e74c3c;
     color: #fff;
     border-color: #c0392b;
+    padding-top: 3px;
 	width:9%!important; /*originally it was 35px*/
 
 }
@@ -311,6 +314,7 @@ background: none repeat scroll 0 0 #e74c3c;
 #keyPad #keyPad_btnCube,
 #keyPad #keyPad_btnExp,
 #keyPad #keyPad_btnYpowX{
+    padding-top: 3px;
     font-size: 20px; /*originally it was 12px*/
 }
 
